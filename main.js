@@ -27,9 +27,9 @@ const winningCombos = [
   const gameBoard = [1 , 2, 3, 4, 5, 6, 7, 8, 9 ];
 
   let turn = '1' || '-1';
-  
+  //find a place to store player/computerTotalScore /connect it to where the game keeps track of turns and chosen squares
   let winner = score {
-    won: playerScore > computerScore || playerScore < computerScore;
+    won: playerTotalScore > computerToatalScore || playerTotalScore < computerTotalScore;
     tie: playerScore === computerScore;
     gameInPlay: playerChoices < turn && computerChoices < turn;
     }
